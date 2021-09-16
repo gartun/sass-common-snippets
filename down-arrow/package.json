@@ -1,0 +1,13 @@
+{
+  "name": "down-arrow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass main.scss styles.css --no-source-map",
+    "sass:w": "sass --watch main.scss styles.css --no-source-map" 
+  },
+  "keywords": [],
+  "author": "gartun",
+  "license": "ISC"
+}

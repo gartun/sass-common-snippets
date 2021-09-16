@@ -1,0 +1,28 @@
+@import "../reset";
+
+$arr-size: 40px;
+$arr-wid: $arr-size / 4;
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.arr {
+  height: $arr-size;
+  width: $arr-size;
+  border: 0px solid #350A0A;
+  border-right-width: $arr-wid;
+  border-bottom-width: $arr-wid;
+  border-top-right-radius: $arr-wid;
+  border-bottom-left-radius: $arr-wid;
+  transform: rotate(45deg);
+  transition: transform .3s;
+  cursor: pointer;
+  
+  &.open {
+    transform: rotate(225deg);
+  }
+}
