@@ -1,13 +1,11 @@
 @import "../reset";
+@import "../mixins";
 
 $arr-size: 40px;
 $arr-wid: $arr-size / 4;
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  @include centerChild(100vh);
 }
 
 .arr {
