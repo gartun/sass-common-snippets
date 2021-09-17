@@ -1,6 +1,15 @@
+$sides: top left bottom right;
+
 @mixin centerChild($height) {
   height: $height;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+@mixin insetMixin($val) {
+  @each $side in $sides {
+    #{$side}: $val; 
+  }
 }
